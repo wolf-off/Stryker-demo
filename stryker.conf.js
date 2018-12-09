@@ -4,7 +4,6 @@ module.exports = function(config) {
     packageManager: "npm",
     reporters: ["clear-text", "progress"],
     testRunner: "karma",
-    transpilers: [],
     testFramework: "jasmine",
     coverageAnalysis: "perTest",
     karma: {

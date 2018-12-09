@@ -1,26 +1,30 @@
-describe('Accumulator',function(){
+describe('Accumulator', function () {
 
-    var target=null;
+    var target = null;
 
-    beforeEach(function(){
-        target=new Accumulator();
+    beforeEach(function () {
+        target = new Accumulator();
     });
-     
-    it('add should adds',function(){
-        target.value=1;
+
+    it('add should adding', function () {
+        target.value = 1;
         target.add(2);
         expect(target.value).toEqual(3);
     });
-     
-    it('remove should removes',function(){
-        target.value=3;
-        target.remove(2);
+
+    it('sub should substracting', function () {
+        target.value = 3;
+        target.sub(2);
         expect(target.value).toEqual(1);
     });
-     
-    it('remove should remove only available',function(){
-        target.value=1;
-        target.remove(2);
+
+    it('sub should substracting only available', function () {
+        expect(target.value).toEqual(0);
+    });
+
+    it('sub should substracting only available', function () {
+        target.value = 1;
+        target.sub(2);
         expect(target.value).toEqual(0);
     });
 });
