@@ -1,4 +1,4 @@
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     mutator: "javascript",
     packageManager: "npm",
@@ -12,6 +12,7 @@ module.exports = function(config) {
       config: {}
     },
     mutate: ["accumulator.js"],
-    tsconfigFile: "tsconfig.json"
+    tsconfigFile: "tsconfig.json",
+    maxConcurrentTestRunners: 1
   });
 };
