@@ -1,0 +1,34 @@
+{
+  "name": "stryker-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "accumulator.js",
+  "dependencies": {
+    "karma": "^3.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-coverage-istanbul-reporter": "^2.0.4",
+    "karma-jasmine": "^2.0.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "stryker": "^0.32.1",
+    "stryker-api": "^0.21.5",
+    "stryker-jasmine": "^0.10.6",
+    "stryker-javascript-mutator": "^0.11.5",
+    "stryker-karma-runner": "^0.20.3",
+    "stryker-typescript": "^0.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolf-off/Stryker-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolf-off/Stryker-demo/issues"
+  },
+  "homepage": "https://github.com/wolf-off/Stryker-demo#readme"
+}

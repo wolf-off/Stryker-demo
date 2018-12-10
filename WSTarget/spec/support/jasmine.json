@@ -1,0 +1,7 @@
+{
+  "spec_files": [
+    "./accumulator.spec.js"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}
