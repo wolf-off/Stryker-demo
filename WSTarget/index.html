@@ -19,12 +19,17 @@
 </script>
 
 <body onload="onLoad()">
-    <h2>Value</h2>
-    <h2 id='sum'></h2>
-    <button onclick="add()">Add</button>
-    <button onclick="sub()">Remove</button>
-    <div>
-        <h4>Step value</h4>
-        <input id='step' type="number" value="2" />
-    </div>
+    <dom-di-container>
+        <service-a-control-v1></service-control>
+        <consumer-control></custom-control>
+    
+        <dom-di-container>
+          <consumer-control></consumer-control>
+        </dom-di-container>
+    
+        <dom-di-container>
+          <service-a-control-v2></service-control>
+          <consumer-control></consumer-control>
+        </dom-di-container>
+      </dom-di-container>
 </body>
